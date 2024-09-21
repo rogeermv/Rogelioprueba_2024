@@ -37,6 +37,10 @@ module tt_um_uabc_test2027 (
     end
 
     seg7 seg7(.digit(display_value), .segments(segment_reg));
+
+  assign uo_out = segment_reg; 
+  assign uio_out = 0; 
+  assign uio_oe = 8'hFF; 
     
   assign uo_out = segment_reg; 
 
